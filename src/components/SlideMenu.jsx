@@ -36,10 +36,12 @@ export default function SlideMenu(props) {
           <List>
             {["Inicio", "Tienda", "Acerca de", "Contacto"].map((text, index) => {
               let to = "/";
-              if (index === 2) {
+              if (index === 1) {
+                to = "products";
+              } else if (index === 2) {
                 to = "about";
               } else if (index === 3) {
-                to = "contact";
+                  to = "contact";
               }
 
               return (

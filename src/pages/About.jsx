@@ -9,7 +9,7 @@ export default function About() {
         md={12}
         xs={12}
         p={5}
-        style={{ background: "#f5f5f5", marginTop: "auto" }}
+        style={{ background: "background", marginTop: "auto" }}
       >
         <Typography variant="body2" color="textSecondary" align="center">
           FOOTER

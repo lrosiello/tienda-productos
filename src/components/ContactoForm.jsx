@@ -9,11 +9,11 @@ export default function ContactoForm() {
       md={12}
       xs={12}
       p={5}
-      style={{ background: "#f5f5f5", marginTop: "auto" }}
+      style={{ background: "background", marginTop: "auto" }}
     >
       <Grid container>
         <Grid item md={12} xs={12}>
-          <Typography variant="body1" color="secondary.main" align="center">
+          <Typography variant="body1" color="primary" align="center">
             CONTACTO
           </Typography>
         </Grid>

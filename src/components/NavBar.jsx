@@ -46,7 +46,7 @@ export default function NavBar() {
               INICIO
             </Button>
           </Link>
-          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link to="/products" style={{ textDecoration: "none", color: "inherit" }}>
             <Button
               color="inherit"
               sx={{ display: { xs: "none", md: "block", lg: "block" } }}

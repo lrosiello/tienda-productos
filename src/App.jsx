@@ -4,8 +4,9 @@ import NavBar from "./components/NavBar";
 import Productos from "./pages/Productos";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Inicio from "./pages/Inicio";
 import Footer from "./components/Footer";
-import { Container, Fab, Grid, Typography } from "@mui/material";
+import { Container, Fab, Grid } from "@mui/material";
 
 import { IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -35,26 +36,21 @@ function App() {
           <Grid item md={12} xs={12}>
             <NavBar />
           </Grid>
-          {/*------------------CARTELERA-------------------------*/}
-          <Grid item md={12} xs={12} p={5}>
-            <Typography variant="h5" color="initial" textAlign="center">
-              TODO LO QUE NECESITAS, LO PODES ENCONTRAR ACA
-            </Typography>
-          </Grid>
 
           {/*------------------RUTAS-------------------------*/}
           <Routes>
-            <Route path="/" element={<Productos />} />
+            <Route path="/" element={<Inicio />} />
+            <Route path="/products" element={<Productos />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
 
           {/*------------------BOTON WHATSSAP-------------------------*/}
-          <Grid item md={12} xs={12} sx={{ display: "flex", justifyContent: "flex-end", marginBottom: 5, marginRight:15 }}>
-            <Fab color="secondary" aria-label="add">
-              <WhatsAppIcon />
+          <div style={{ position: "fixed", bottom: 80, right: 80 }}>
+            <Fab color="success" aria-label="add">
+              <WhatsAppIcon sx={{fontSize:"3rem" }}/>
             </Fab>
-          </Grid>
+          </div>
 
           {/*------------------FOOTER-------------------------*/}
           <Footer />
