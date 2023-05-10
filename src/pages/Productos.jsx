@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import ContactoForm from "../components/ContactoForm";
 export default function Productos() {
   return (
     <>
@@ -22,8 +21,6 @@ export default function Productos() {
         repellat tempora. Tempore quis nulla asperiores esse iste distinctio
         doloremque commodi dolorem.
       </Grid>
-
-      <ContactoForm/>
     </>
   );
 }

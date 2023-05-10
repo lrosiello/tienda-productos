@@ -25,7 +25,7 @@ export default function NavBar() {
         <Toolbar>
           {/*------------------ACA VA EL LOGO O TITULO DE LA TIENDA-------------------------*/}
           <Typography
-            variant="h6"
+            variant="h4"
             component="div"
             sx={{
               flexGrow: {
@@ -43,7 +43,7 @@ export default function NavBar() {
               color="inherit"
               sx={{ display: { xs: "none", md: "block", lg: "block" } }}
             >
-              INICIO
+              <Typography variant="h6" color="inherit">INICIO</Typography>
             </Button>
           </Link>
           <Link to="/products" style={{ textDecoration: "none", color: "inherit" }}>
@@ -51,7 +51,7 @@ export default function NavBar() {
               color="inherit"
               sx={{ display: { xs: "none", md: "block", lg: "block" } }}
             >
-              TIENDA
+              <Typography variant="h6" color="inherit">TIENDA</Typography>
             </Button>
           </Link>
           <Link
@@ -62,7 +62,7 @@ export default function NavBar() {
               color="inherit"
               sx={{ display: { xs: "none", md: "block", lg: "block" } }}
             >
-              ACERCA DE
+              <Typography variant="h6" color="inherit">ACERCA</Typography>
             </Button>
           </Link>
           <Link
@@ -73,7 +73,7 @@ export default function NavBar() {
               color="inherit"
               sx={{ display: { xs: "none", md: "block", lg: "block" } }}
             >
-              CONTACTO
+              <Typography variant="h6" color="inherit">CONTACTO</Typography>
             </Button>
           </Link>
 
@@ -108,6 +108,7 @@ export default function NavBar() {
                 borderRadius: 2,
                 marginLeft: "auto",
                 display: { xs: "none", md: "flex", lg: "flex" },
+                my:1,
               }}
             >
               <SearchIcon sx={{ ml: 2, color: "primary.main", mr: 1, my: 2 }} />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid,Typography } from "@mui/material";
 import Productos from "./Productos"
+import ContactoForm from "../components/ContactoForm"
 
 export default function Inicio() {
   return (
@@ -12,6 +13,7 @@ export default function Inicio() {
             </Typography>
           </Grid>
       <Productos/>
+      <ContactoForm/>
     </>
   );
 }

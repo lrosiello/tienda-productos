@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Box, TextField } from "@mui/material";
+import { Grid, Typography, Box, TextField, Button } from "@mui/material";
 
 export default function ContactoForm() {
   return (
@@ -11,7 +11,7 @@ export default function ContactoForm() {
       p={5}
       style={{ background: "background", marginTop: "auto" }}
     >
-      <Grid container>
+      <Grid container justifyContent="center">
         <Grid item md={12} xs={12}>
           <Typography variant="body1" color="primary" align="center">
             CONTACTO
@@ -20,16 +20,17 @@ export default function ContactoForm() {
         <Grid
           container
           item
-          md={12}
+          md={6}
           spacing={2}
           alignItems="center"
-          justifyContent="center" // Añadido para centrar horizontalmente
+          justifyContent="center"
+          
         >
           <Grid item md={6} xs={12}>
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "100%" }, // Ajusta el ancho al 100%
+                "& .MuiTextField-root": { m: 1, width: "100%" },
               }}
               noValidate
               autoComplete="off"
@@ -38,7 +39,7 @@ export default function ContactoForm() {
                 id="outlined-multiline-flexible"
                 label="Nombre"
                 multiline
-                maxRows={4}                
+                maxRows={4}
               />
               <TextField
                 id="outlined-multiline-flexible"
@@ -58,7 +59,7 @@ export default function ContactoForm() {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "100%" }, // Ajusta el ancho al 100%
+                "& .MuiTextField-root": { m: 1, width: "100%" },
               }}
               noValidate
               autoComplete="off"
@@ -69,6 +70,9 @@ export default function ContactoForm() {
                 multiline
                 rows={4}
               />
+              <Button variant="contained" color="success" sx={{ width: '100%',ml:1,mb:1.5,mt:3.5}}>
+                Enviar
+              </Button>
             </Box>
           </Grid>
         </Grid>
