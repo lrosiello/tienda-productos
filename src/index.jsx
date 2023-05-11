@@ -20,6 +20,9 @@ const theme = createTheme({
     background: {
       default: '#f5f5f5',
     },
+    text: {
+      secondary: 'rgba(234,226,226,0.67)',
+    },
   },
 })
 
