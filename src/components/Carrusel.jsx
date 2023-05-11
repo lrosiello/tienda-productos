@@ -43,11 +43,12 @@ export default function Carrusel() {
   return (
     <div style={{ width: "100%", margin: "0 auto" }}>
       <Carousel
-        animation="slide"
-        index={currentIndex}
-        onChange={(index) => setCurrentIndex(index)}
-        autoPlay={false} 
-        
+       animation="slide"
+       index={currentIndex}
+       onChange={(index) => setCurrentIndex(index)}
+       navButtonsAlwaysVisible={false}
+       swipe={false}
+       autoPlay={false}
       >
         {sliders.map((item) => (
           <CarouselItem key={item.id} img={item.img} title={item.title} text={item.text} />
