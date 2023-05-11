@@ -13,6 +13,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
+
 function App() {
   return (
     <div className="App">
@@ -46,7 +47,7 @@ function App() {
           </Routes>
 
           {/*------------------BOTON WHATSSAP-------------------------*/}
-          <div style={{ position: "fixed", bottom: 80, right: 80 }}>
+          <div style={{ position: "fixed", bottom: 80, right: 80, zIndex:5 }}>
             <Fab color="success" aria-label="add">
               <WhatsAppIcon sx={{fontSize:"3rem" }}/>
             </Fab>

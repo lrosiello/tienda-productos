@@ -11,8 +11,8 @@ export default function About() {
         p={5}
         style={{ background: "background", marginTop: "auto" }}
       >
-        <Typography variant="body2" color="textSecondary" align="center">
-          FOOTER
+        <Typography variant="body2" color="initial" align="center">
+          ACERCA DE NOSOTROS...
         </Typography>
       </Grid>
     </>

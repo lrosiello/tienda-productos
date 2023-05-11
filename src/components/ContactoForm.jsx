@@ -1,7 +1,9 @@
 import React from "react";
-import { Grid, Typography, Box, TextField, Button } from "@mui/material";
+import { Grid, Typography, Box, TextField, Button,useTheme  } from "@mui/material";
 
 export default function ContactoForm() {
+
+   const theme = useTheme();
   return (
     <Grid
       item
@@ -9,7 +11,8 @@ export default function ContactoForm() {
       md={12}
       xs={12}
       p={5}
-      style={{ background: "background", marginTop: "auto" }}
+      
+      style={{ backgroundColor: theme.palette.background.default, marginTop: "auto" }}
     >
       <Grid container justifyContent="center">
         <Grid item md={12} xs={12}>
@@ -24,13 +27,13 @@ export default function ContactoForm() {
           spacing={2}
           alignItems="center"
           justifyContent="center"
-          
         >
           <Grid item md={6} xs={12}>
             <Box
               component="form"
               sx={{
                 "& .MuiTextField-root": { m: 1, width: "100%" },
+                "& .MuiInputLabel-root": { color: theme.palette.text.primary }, 
               }}
               noValidate
               autoComplete="off"
@@ -40,6 +43,7 @@ export default function ContactoForm() {
                 label="Nombre"
                 multiline
                 maxRows={4}
+                
               />
               <TextField
                 id="outlined-multiline-flexible"
@@ -60,6 +64,7 @@ export default function ContactoForm() {
               component="form"
               sx={{
                 "& .MuiTextField-root": { m: 1, width: "100%" },
+                "& .MuiInputLabel-root": { color: theme.palette.text.primary },
               }}
               noValidate
               autoComplete="off"

@@ -20,7 +20,7 @@ export default function NavBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, mb:4 }}>
       <AppBar position="static">
         <Toolbar>
           {/*------------------ACA VA EL LOGO O TITULO DE LA TIENDA-------------------------*/}
